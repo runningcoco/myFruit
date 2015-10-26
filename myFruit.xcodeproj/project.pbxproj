@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		56C30EA41BDE7457006919AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EA31BDE7457006919AF /* main.m */; };
 		56C30EA71BDE7457006919AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EA61BDE7457006919AF /* AppDelegate.m */; };
-		56C30EAA1BDE7457006919AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EA91BDE7457006919AF /* ViewController.m */; };
-		56C30EAD1BDE7457006919AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C30EAB1BDE7457006919AF /* Main.storyboard */; };
+		56C30EAA1BDE7457006919AF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EA91BDE7457006919AF /* MainViewController.m */; };
 		56C30EAF1BDE7457006919AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C30EAE1BDE7457006919AF /* Images.xcassets */; };
 		56C30EB21BDE7457006919AF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C30EB01BDE7457006919AF /* LaunchScreen.xib */; };
 		56C30EBE1BDE7457006919AF /* myFruitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EBD1BDE7457006919AF /* myFruitTests.m */; };
+		56C30EC91BDE7512006919AF /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EC81BDE7512006919AF /* NavigationViewController.m */; };
+		56C30ECC1BDE7538006919AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30ECB1BDE7538006919AF /* HomeViewController.m */; };
+		56C30ECF1BDE7551006919AF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30ECE1BDE7551006919AF /* LoginViewController.m */; };
+		56C30ED21BDE7574006919AF /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30ED11BDE7574006919AF /* RegistViewController.m */; };
+		56C30ED41BDE75DF006919AF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C30ED31BDE75DF006919AF /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +36,22 @@
 		56C30EA31BDE7457006919AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56C30EA51BDE7457006919AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		56C30EA61BDE7457006919AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		56C30EA81BDE7457006919AF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		56C30EA91BDE7457006919AF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		56C30EAC1BDE7457006919AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		56C30EA81BDE7457006919AF /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		56C30EA91BDE7457006919AF /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		56C30EAE1BDE7457006919AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		56C30EB11BDE7457006919AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		56C30EB71BDE7457006919AF /* myFruitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myFruitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C30EBC1BDE7457006919AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56C30EBD1BDE7457006919AF /* myFruitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myFruitTests.m; sourceTree = "<group>"; };
+		56C30EC71BDE7512006919AF /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		56C30EC81BDE7512006919AF /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		56C30ECA1BDE7538006919AF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		56C30ECB1BDE7538006919AF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		56C30ECD1BDE7551006919AF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		56C30ECE1BDE7551006919AF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		56C30ED01BDE7574006919AF /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		56C30ED11BDE7574006919AF /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		56C30ED31BDE75DF006919AF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56C30ED41BDE75DF006919AF /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 		56C30E951BDE7457006919AF = {
 			isa = PBXGroup;
 			children = (
+				56C30ED31BDE75DF006919AF /* QuartzCore.framework */,
 				56C30EA01BDE7457006919AF /* myFruit */,
 				56C30EBA1BDE7457006919AF /* myFruitTests */,
 				56C30E9F1BDE7457006919AF /* Products */,
@@ -83,9 +97,16 @@
 			children = (
 				56C30EA51BDE7457006919AF /* AppDelegate.h */,
 				56C30EA61BDE7457006919AF /* AppDelegate.m */,
-				56C30EA81BDE7457006919AF /* ViewController.h */,
-				56C30EA91BDE7457006919AF /* ViewController.m */,
-				56C30EAB1BDE7457006919AF /* Main.storyboard */,
+				56C30EA81BDE7457006919AF /* MainViewController.h */,
+				56C30EA91BDE7457006919AF /* MainViewController.m */,
+				56C30EC71BDE7512006919AF /* NavigationViewController.h */,
+				56C30EC81BDE7512006919AF /* NavigationViewController.m */,
+				56C30ECA1BDE7538006919AF /* HomeViewController.h */,
+				56C30ECB1BDE7538006919AF /* HomeViewController.m */,
+				56C30ECD1BDE7551006919AF /* LoginViewController.h */,
+				56C30ECE1BDE7551006919AF /* LoginViewController.m */,
+				56C30ED01BDE7574006919AF /* RegistViewController.h */,
+				56C30ED11BDE7574006919AF /* RegistViewController.m */,
 				56C30EAE1BDE7457006919AF /* Images.xcassets */,
 				56C30EB01BDE7457006919AF /* LaunchScreen.xib */,
 				56C30EA11BDE7457006919AF /* Supporting Files */,
@@ -199,7 +220,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56C30EAD1BDE7457006919AF /* Main.storyboard in Resources */,
 				56C30EB21BDE7457006919AF /* LaunchScreen.xib in Resources */,
 				56C30EAF1BDE7457006919AF /* Images.xcassets in Resources */,
 			);
@@ -219,8 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56C30EAA1BDE7457006919AF /* ViewController.m in Sources */,
+				56C30EC91BDE7512006919AF /* NavigationViewController.m in Sources */,
+				56C30ED21BDE7574006919AF /* RegistViewController.m in Sources */,
+				56C30EAA1BDE7457006919AF /* MainViewController.m in Sources */,
+				56C30ECF1BDE7551006919AF /* LoginViewController.m in Sources */,
 				56C30EA71BDE7457006919AF /* AppDelegate.m in Sources */,
+				56C30ECC1BDE7538006919AF /* HomeViewController.m in Sources */,
 				56C30EA41BDE7457006919AF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +268,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		56C30EAB1BDE7457006919AF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				56C30EAC1BDE7457006919AF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		56C30EB01BDE7457006919AF /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

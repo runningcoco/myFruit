@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+#import "NavigationViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +17,23 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    
+    HomeViewController *rootVC = [[HomeViewController alloc] init];
+    NavigationViewController *nav = [[NavigationViewController alloc] initWithRootViewController:rootVC];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+    if ([UIDevice currentDevice].systemVersion.floatValue >= 7.0) {
+        [[UINavigationBar appearance] setBarTintColor:[UIColor orangeColor]];
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    }
+
+    
     return YES;
 }
 
