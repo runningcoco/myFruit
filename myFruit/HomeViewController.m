@@ -10,7 +10,6 @@
 #import "LoginViewController.h"
 #import "RegistViewController.h"
 #import "NavigationViewController.h"
-
 #import <QuartzCore/QuartzCore.h>
 
 #define kScreenWidth self.view.frame.size.width
