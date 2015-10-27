@@ -20,7 +20,8 @@
 
 @implementation TabBarViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     MarketViewController *home = [[MarketViewController alloc] init];

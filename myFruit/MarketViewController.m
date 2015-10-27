@@ -11,6 +11,7 @@
 @interface MarketViewController () <UISearchBarDelegate>
 {
     UISearchBar *customSearchBar;
+    
 }
 
 @end

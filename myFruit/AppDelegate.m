@@ -23,6 +23,7 @@
     
     TabBarViewController *nav = [[TabBarViewController alloc] init];
     self.window.rootViewController = nav;
+    
     [self.window makeKeyAndVisible];
     
     if ([UIDevice currentDevice].systemVersion.floatValue >= 7.0) {

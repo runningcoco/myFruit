@@ -9,7 +9,12 @@
 #ifndef myFruit_PrefixHeader_pch
 #define myFruit_PrefixHeader_pch
 
+
+
 #define kScreenWidth self.view.frame.size.width
 #define kScreenHeigth self.view.frame.size.height
+
+
+
 
 #endif

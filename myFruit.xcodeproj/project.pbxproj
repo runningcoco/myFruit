@@ -377,7 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/dstwuhan/Desktop/myFruit/myFruit/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/echochief/Downloads/myFruit/myFruit/PrefixHeader.pch;
 				INFOPLIST_FILE = myFruit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,7 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PREFIX_HEADER = /Users/dstwuhan/Desktop/myFruit/myFruit/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/echochief/Downloads/myFruit/myFruit/PrefixHeader.pch;
 				INFOPLIST_FILE = myFruit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
