@@ -19,7 +19,7 @@
     [super viewDidLoad];
     
     UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth/2, self.navigationController.navigationBar.frame.size.height)];
-
+    ///////
     
     NSLog(@"frame:%@",NSStringFromCGRect(titleView.frame));
     
