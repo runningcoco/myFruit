@@ -12,6 +12,7 @@
 #import "ShoppingcartViewController.h"
 #import "OrdersViewController.h"
 #import "HomeViewController.h"
+#import "PersonalViewController.h"
 
 @interface TabBarViewController ()
 
@@ -32,9 +33,12 @@
     OrdersViewController *orders = [[OrdersViewController alloc] init];
     [self addChildViewController:orders title:@"订单" image:nil selectedImage:nil];
     
-    HomeViewController *login = [[HomeViewController alloc] init];
-    [self addChildViewController:login title:@"我的" image:nil selectedImage:nil];
-    
+    PersonalViewController *myself = [[PersonalViewController alloc] init];
+    [self addChildViewController:myself title:@"我的" image:nil selectedImage:nil];
+
+    UITabBar *tabBar = [[UITabBar alloc] init];
+    [tabBar setTintColor:[UIColor orangeColor]];
+    [self setValue:tabBar forKey:@"tabBar"];
 }
 
 - (void)addChildViewController:(UIViewController *)childController title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
@@ -44,12 +48,12 @@
     childController.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     NSMutableDictionary *textAttrs4 = [NSMutableDictionary dictionary];
-    textAttrs4[NSForegroundColorAttributeName] = [UIColor grayColor];
+    textAttrs4[NSForegroundColorAttributeName] = [UIColor greenColor];
     [childController.tabBarItem setTitleTextAttributes:textAttrs4 forState:UIControlStateNormal];
     
-    NSMutableDictionary *selectedTextAttrs4 = [NSMutableDictionary dictionary];
-    selectedTextAttrs4[NSForegroundColorAttributeName] = [UIColor orangeColor];
-    [childController.tabBarItem setTitleTextAttributes:selectedTextAttrs4 forState:UIControlStateSelected];
+//    NSMutableDictionary *selectedTextAttrs4 = [NSMutableDictionary dictionary];
+//    selectedTextAttrs4[NSForegroundColorAttributeName] = [UIColor orangeColor];
+//    [childController.tabBarItem setTitleTextAttributes:selectedTextAttrs4 forState:UIControlStateSelected];
     
     NavigationController *nav = [[NavigationController alloc] initWithRootViewController:childController];
     [self addChildViewController:nav];

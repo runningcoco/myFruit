@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		21368D901BDF6B07006D1CDF /* OrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21368D8F1BDF6B07006D1CDF /* OrdersViewController.m */; };
 		2150BB501BDF4CE7009F22A2 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2150BB4F1BDF4CE7009F22A2 /* NavigationController.m */; };
+		56B1408C1BDFB4830026C60D /* Tarbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B1408B1BDFB4830026C60D /* Tarbar.m */; };
+		56B1408F1BDFBCA80026C60D /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B1408E1BDFBCA80026C60D /* PersonalViewController.m */; };
+		56B140921BDFC5B20026C60D /* MyInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B140911BDFC5B20026C60D /* MyInformationViewController.m */; };
 		56C30EA41BDE7457006919AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EA31BDE7457006919AF /* main.m */; };
 		56C30EA71BDE7457006919AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EA61BDE7457006919AF /* AppDelegate.m */; };
 		56C30EAA1BDE7457006919AF /* ShoppingcartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EA91BDE7457006919AF /* ShoppingcartViewController.m */; };
@@ -38,6 +41,12 @@
 		21368D911BDF7238006D1CDF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		2150BB4E1BDF4CE7009F22A2 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		2150BB4F1BDF4CE7009F22A2 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		56B1408A1BDFB4830026C60D /* Tarbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tarbar.h; sourceTree = "<group>"; };
+		56B1408B1BDFB4830026C60D /* Tarbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tarbar.m; sourceTree = "<group>"; };
+		56B1408D1BDFBCA80026C60D /* PersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalViewController.h; sourceTree = "<group>"; };
+		56B1408E1BDFBCA80026C60D /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
+		56B140901BDFC5B20026C60D /* MyInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInformationViewController.h; sourceTree = "<group>"; };
+		56B140911BDFC5B20026C60D /* MyInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInformationViewController.m; sourceTree = "<group>"; };
 		56C30E9E1BDE7457006919AF /* myFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C30EA21BDE7457006919AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56C30EA31BDE7457006919AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -114,10 +123,16 @@
 				56C30EA91BDE7457006919AF /* ShoppingcartViewController.m */,
 				21368D8E1BDF6B07006D1CDF /* OrdersViewController.h */,
 				21368D8F1BDF6B07006D1CDF /* OrdersViewController.m */,
+				56B1408D1BDFBCA80026C60D /* PersonalViewController.h */,
+				56B1408E1BDFBCA80026C60D /* PersonalViewController.m */,
+				56B140901BDFC5B20026C60D /* MyInformationViewController.h */,
+				56B140911BDFC5B20026C60D /* MyInformationViewController.m */,
 				56C30ECA1BDE7538006919AF /* HomeViewController.h */,
 				56C30ECB1BDE7538006919AF /* HomeViewController.m */,
 				56C30ED01BDE7574006919AF /* RegistViewController.h */,
 				56C30ED11BDE7574006919AF /* RegistViewController.m */,
+				56B1408A1BDFB4830026C60D /* Tarbar.h */,
+				56B1408B1BDFB4830026C60D /* Tarbar.m */,
 				56C30EAE1BDE7457006919AF /* Images.xcassets */,
 				56C30EB01BDE7457006919AF /* LaunchScreen.xib */,
 				56C30EA11BDE7457006919AF /* Supporting Files */,
@@ -256,10 +271,13 @@
 				56C30EAA1BDE7457006919AF /* ShoppingcartViewController.m in Sources */,
 				56C30ECF1BDE7551006919AF /* MarketViewController.m in Sources */,
 				21368D901BDF6B07006D1CDF /* OrdersViewController.m in Sources */,
+				56B1408C1BDFB4830026C60D /* Tarbar.m in Sources */,
 				56C30EA71BDE7457006919AF /* AppDelegate.m in Sources */,
 				2150BB501BDF4CE7009F22A2 /* NavigationController.m in Sources */,
 				56C30ECC1BDE7538006919AF /* HomeViewController.m in Sources */,
 				56C30EA41BDE7457006919AF /* main.m in Sources */,
+				56B1408F1BDFBCA80026C60D /* PersonalViewController.m in Sources */,
+				56B140921BDFC5B20026C60D /* MyInformationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
