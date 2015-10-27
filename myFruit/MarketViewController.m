@@ -22,7 +22,8 @@
     self.navigationController.navigationBarHidden = NO;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     [self.navigationController.navigationBar setBarTintColor:[UIColor orangeColor]];
@@ -34,7 +35,6 @@
     self.navigationItem.leftBarButtonItem = back;
     
     UIView *searchView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width - 100, 45)];
-    //    searchView.backgroundColor = [UIColor redColor];
     [self.navigationItem setTitleView:searchView];
     
     customSearchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 5, self.view.frame.size.width - 100, 30)];
