@@ -6,16 +6,16 @@
 //  Copyright (c) 2015年 echochief. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "MarketViewController.h"
 
-@interface LoginViewController () <UISearchBarDelegate>
+@interface MarketViewController () <UISearchBarDelegate>
 {
     UISearchBar *customSearchBar;
 }
 
 @end
 
-@implementation LoginViewController
+@implementation MarketViewController
 
 - (void)viewWillAppear:(BOOL)animated
 {

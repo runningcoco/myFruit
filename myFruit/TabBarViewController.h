@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  NavigationViewController.h
 //  myFruit
 //
 //  Created by 我是僵尸 on 15/10/26.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface TabBarViewController : UITabBarController
 
 @end

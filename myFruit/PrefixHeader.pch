@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  myFruit
+//
+//  Created by dstwuhan on 15/10/27.
+//  Copyright (c) 2015年 echochief. All rights reserved.
+//
+
+#ifndef myFruit_PrefixHeader_pch
+#define myFruit_PrefixHeader_pch
+
+#define kScreenWidth self.view.frame.size.width
+#define kScreenHeigth self.view.frame.size.height
+
+#endif

@@ -7,13 +7,11 @@
 //
 
 #import "HomeViewController.h"
-#import "LoginViewController.h"
+#import "MarketViewController.h"
 #import "RegistViewController.h"
-#import "NavigationViewController.h"
+#import "TabBarViewController.h"
+#import "NavigationController.h"
 #import <QuartzCore/QuartzCore.h>
-
-#define kScreenWidth self.view.frame.size.width
-#define kScreenHeigth self.view.frame.size.height
 
 @interface HomeViewController () <UITabBarDelegate>
 {
@@ -48,15 +46,14 @@
 {
     [super viewDidLoad];
     
+    
     [self setupTabbar];
     [self setupUI];
-    
 }
 
 - (void)setupTabbar
 {
     bottomTabBar = [[UITabBar alloc] init];
-    bottomTabBar.frame = CGRectMake(0, kScreenHeigth - 45, kScreenWidth, 45);
     bottomTabBar.delegate = self;
     UITabBarItem *mainPage = [[UITabBarItem alloc] initWithTitle:@"主页" image:nil tag:1];
     NSArray *itemArray = [NSArray arrayWithObject:mainPage];
@@ -153,8 +150,8 @@
 
 - (void)loginClick:(id)sender
 {
-    LoginViewController *loginVC = [[LoginViewController alloc] init];
-    NavigationViewController *nav = [[NavigationViewController alloc] initWithRootViewController:loginVC];
+    MarketViewController *loginVC = [[MarketViewController alloc] init];
+    NavigationController *nav = [[NavigationController alloc] initWithRootViewController:loginVC];
     [self.navigationController presentViewController:nav animated:YES completion:nil];
     //    [self.navigationController presentModalViewController:loginVC animated:YES];
 }
@@ -162,7 +159,7 @@
 - (void)registClick
 {
     NSLog(@"click registBtn !");
-    LoginViewController *loginVC = [[LoginViewController alloc] init];
+    MarketViewController *loginVC = [[MarketViewController alloc] init];
     [self.navigationController pushViewController:loginVC animated:YES];
     self.navigationController.navigationBarHidden = NO;
 }

@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
-#import "NavigationViewController.h"
+#import "TabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,9 +21,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    
-    HomeViewController *rootVC = [[HomeViewController alloc] init];
-    NavigationViewController *nav = [[NavigationViewController alloc] initWithRootViewController:rootVC];
+    TabBarViewController *nav = [[TabBarViewController alloc] init];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     

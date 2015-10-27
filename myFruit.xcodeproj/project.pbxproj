@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21368D901BDF6B07006D1CDF /* OrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21368D8F1BDF6B07006D1CDF /* OrdersViewController.m */; };
+		2150BB501BDF4CE7009F22A2 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2150BB4F1BDF4CE7009F22A2 /* NavigationController.m */; };
 		56C30EA41BDE7457006919AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EA31BDE7457006919AF /* main.m */; };
 		56C30EA71BDE7457006919AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EA61BDE7457006919AF /* AppDelegate.m */; };
-		56C30EAA1BDE7457006919AF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EA91BDE7457006919AF /* MainViewController.m */; };
+		56C30EAA1BDE7457006919AF /* ShoppingcartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EA91BDE7457006919AF /* ShoppingcartViewController.m */; };
 		56C30EAF1BDE7457006919AF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C30EAE1BDE7457006919AF /* Images.xcassets */; };
 		56C30EB21BDE7457006919AF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C30EB01BDE7457006919AF /* LaunchScreen.xib */; };
 		56C30EBE1BDE7457006919AF /* myFruitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EBD1BDE7457006919AF /* myFruitTests.m */; };
-		56C30EC91BDE7512006919AF /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EC81BDE7512006919AF /* NavigationViewController.m */; };
+		56C30EC91BDE7512006919AF /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EC81BDE7512006919AF /* TabBarViewController.m */; };
 		56C30ECC1BDE7538006919AF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30ECB1BDE7538006919AF /* HomeViewController.m */; };
-		56C30ECF1BDE7551006919AF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30ECE1BDE7551006919AF /* LoginViewController.m */; };
+		56C30ECF1BDE7551006919AF /* MarketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30ECE1BDE7551006919AF /* MarketViewController.m */; };
 		56C30ED21BDE7574006919AF /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30ED11BDE7574006919AF /* RegistViewController.m */; };
 		56C30ED41BDE75DF006919AF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56C30ED31BDE75DF006919AF /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -31,24 +33,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21368D8E1BDF6B07006D1CDF /* OrdersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrdersViewController.h; sourceTree = "<group>"; };
+		21368D8F1BDF6B07006D1CDF /* OrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrdersViewController.m; sourceTree = "<group>"; };
+		21368D911BDF7238006D1CDF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2150BB4E1BDF4CE7009F22A2 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		2150BB4F1BDF4CE7009F22A2 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		56C30E9E1BDE7457006919AF /* myFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C30EA21BDE7457006919AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56C30EA31BDE7457006919AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56C30EA51BDE7457006919AF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		56C30EA61BDE7457006919AF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		56C30EA81BDE7457006919AF /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		56C30EA91BDE7457006919AF /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		56C30EA81BDE7457006919AF /* ShoppingcartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShoppingcartViewController.h; sourceTree = "<group>"; };
+		56C30EA91BDE7457006919AF /* ShoppingcartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShoppingcartViewController.m; sourceTree = "<group>"; };
 		56C30EAE1BDE7457006919AF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		56C30EB11BDE7457006919AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		56C30EB71BDE7457006919AF /* myFruitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myFruitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C30EBC1BDE7457006919AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56C30EBD1BDE7457006919AF /* myFruitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myFruitTests.m; sourceTree = "<group>"; };
-		56C30EC71BDE7512006919AF /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
-		56C30EC81BDE7512006919AF /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		56C30EC71BDE7512006919AF /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		56C30EC81BDE7512006919AF /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		56C30ECA1BDE7538006919AF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		56C30ECB1BDE7538006919AF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		56C30ECD1BDE7551006919AF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		56C30ECE1BDE7551006919AF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		56C30ECD1BDE7551006919AF /* MarketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketViewController.h; sourceTree = "<group>"; };
+		56C30ECE1BDE7551006919AF /* MarketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarketViewController.m; sourceTree = "<group>"; };
 		56C30ED01BDE7574006919AF /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
 		56C30ED11BDE7574006919AF /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
 		56C30ED31BDE75DF006919AF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -97,14 +104,18 @@
 			children = (
 				56C30EA51BDE7457006919AF /* AppDelegate.h */,
 				56C30EA61BDE7457006919AF /* AppDelegate.m */,
-				56C30EA81BDE7457006919AF /* MainViewController.h */,
-				56C30EA91BDE7457006919AF /* MainViewController.m */,
-				56C30EC71BDE7512006919AF /* NavigationViewController.h */,
-				56C30EC81BDE7512006919AF /* NavigationViewController.m */,
+				56C30EC71BDE7512006919AF /* TabBarViewController.h */,
+				56C30EC81BDE7512006919AF /* TabBarViewController.m */,
+				2150BB4E1BDF4CE7009F22A2 /* NavigationController.h */,
+				2150BB4F1BDF4CE7009F22A2 /* NavigationController.m */,
+				56C30ECD1BDE7551006919AF /* MarketViewController.h */,
+				56C30ECE1BDE7551006919AF /* MarketViewController.m */,
+				56C30EA81BDE7457006919AF /* ShoppingcartViewController.h */,
+				56C30EA91BDE7457006919AF /* ShoppingcartViewController.m */,
+				21368D8E1BDF6B07006D1CDF /* OrdersViewController.h */,
+				21368D8F1BDF6B07006D1CDF /* OrdersViewController.m */,
 				56C30ECA1BDE7538006919AF /* HomeViewController.h */,
 				56C30ECB1BDE7538006919AF /* HomeViewController.m */,
-				56C30ECD1BDE7551006919AF /* LoginViewController.h */,
-				56C30ECE1BDE7551006919AF /* LoginViewController.m */,
 				56C30ED01BDE7574006919AF /* RegistViewController.h */,
 				56C30ED11BDE7574006919AF /* RegistViewController.m */,
 				56C30EAE1BDE7457006919AF /* Images.xcassets */,
@@ -117,6 +128,7 @@
 		56C30EA11BDE7457006919AF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				21368D911BDF7238006D1CDF /* PrefixHeader.pch */,
 				56C30EA21BDE7457006919AF /* Info.plist */,
 				56C30EA31BDE7457006919AF /* main.m */,
 			);
@@ -239,11 +251,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56C30EC91BDE7512006919AF /* NavigationViewController.m in Sources */,
+				56C30EC91BDE7512006919AF /* TabBarViewController.m in Sources */,
 				56C30ED21BDE7574006919AF /* RegistViewController.m in Sources */,
-				56C30EAA1BDE7457006919AF /* MainViewController.m in Sources */,
-				56C30ECF1BDE7551006919AF /* LoginViewController.m in Sources */,
+				56C30EAA1BDE7457006919AF /* ShoppingcartViewController.m in Sources */,
+				56C30ECF1BDE7551006919AF /* MarketViewController.m in Sources */,
+				21368D901BDF6B07006D1CDF /* OrdersViewController.m in Sources */,
 				56C30EA71BDE7457006919AF /* AppDelegate.m in Sources */,
+				2150BB501BDF4CE7009F22A2 /* NavigationController.m in Sources */,
 				56C30ECC1BDE7538006919AF /* HomeViewController.m in Sources */,
 				56C30EA41BDE7457006919AF /* main.m in Sources */,
 			);
@@ -363,6 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/dstwuhan/Desktop/myFruit/myFruit/PrefixHeader.pch;
 				INFOPLIST_FILE = myFruit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -373,6 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/dstwuhan/Desktop/myFruit/myFruit/PrefixHeader.pch;
 				INFOPLIST_FILE = myFruit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,6 +448,7 @@
 				56C30EC31BDE7457006919AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		56C30EC41BDE7457006919AF /* Build configuration list for PBXNativeTarget "myFruitTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +457,7 @@
 				56C30EC61BDE7457006919AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
