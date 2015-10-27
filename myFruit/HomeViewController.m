@@ -14,7 +14,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-@interface HomeViewController () <UITabBarDelegate>
+@interface HomeViewController () <UITabBarDelegate >
 {
     UITabBar *bottomTabBar;
     

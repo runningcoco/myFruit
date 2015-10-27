@@ -18,6 +18,7 @@
 
 @implementation MarketViewController
 
+
 - (void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBarHidden = NO;
