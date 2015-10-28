@@ -51,7 +51,7 @@
 {
     NSLog(@"dian");
     MyInformationViewController *myInfo = [[MyInformationViewController alloc] init];
-    myInfo.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    myInfo.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentViewController:myInfo animated:YES completion:nil];
 }
 
