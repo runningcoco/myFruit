@@ -9,6 +9,7 @@
 #import "PersonalViewController.h"
 #import "MyInformationViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "NavigationController.h"
 
 @interface PersonalViewController ()
 {
@@ -24,7 +25,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.navigationController.navigationBar.hidden = YES;
     [self setupUI];
 }
 
@@ -51,8 +52,9 @@
 {
     NSLog(@"dian");
     MyInformationViewController *myInfo = [[MyInformationViewController alloc] init];
+    NavigationController *nav = [[NavigationController alloc] initWithRootViewController:myInfo];
     myInfo.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:myInfo animated:YES completion:nil];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 

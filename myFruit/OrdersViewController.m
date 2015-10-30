@@ -25,7 +25,7 @@
     [self.navigationItem setTitleView:titleView];
     
     UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, titleView.frame.size.width, titleView.frame.size.height)];
-    title.text = @"最近的订单";
+    title.text = @"最近订单";
     title.textColor = [UIColor whiteColor];
     title.font = [UIFont fontWithName:@"Verdana-BoldItalic" size:17.0f];
     title.textAlignment = NSTextAlignmentCenter;

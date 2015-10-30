@@ -25,23 +25,26 @@
     [super viewDidLoad];
     
     MarketViewController *home = [[MarketViewController alloc] init];
-    [self addChildViewController:home title:@"商店" image:nil selectedImage:nil];
+    [self addCViewController:home title:@"商店" image:nil selectedImage:nil];
     
     ShoppingcartViewController *box = [[ShoppingcartViewController alloc] init];
-    [self addChildViewController:box title:@"购物车" image:nil selectedImage:nil];
+    [self addCViewController:box title:@"购物车" image:nil selectedImage:nil];
     
     OrdersViewController *orders = [[OrdersViewController alloc] init];
-    [self addChildViewController:orders title:@"订单" image:nil selectedImage:nil];
+    [self addCViewController:orders title:@"订单" image:nil selectedImage:nil];
     
     PersonalViewController *myself = [[PersonalViewController alloc] init];
-    [self addChildViewController:myself title:@"我的" image:nil selectedImage:nil];
-
+    [self addCViewController:myself title:@"我的" image:nil selectedImage:nil];
+    
     UITabBar *tabBar = [[UITabBar alloc] init];
     [tabBar setTintColor:[UIColor orangeColor]];
     [self setValue:tabBar forKey:@"tabBar"];
+    
+//    UITabBarItem *myself1 = [[UITabBarItem alloc] initWithTitle:@"我的" image:nil selectedImage:nil];
+//    [tabBar addSubview:myself1];
 }
 
-- (void)addChildViewController:(UIViewController *)childController title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
+- (void)addCViewController:(UIViewController *)childController title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
 {
     childController.title = title;
     childController.tabBarItem.image = [UIImage imageNamed:image];

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TabBarViewController.h"
+#import "NavigationController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +22,8 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     TabBarViewController *tbv = [[TabBarViewController alloc] init];
-    self.window.rootViewController = tbv;
     
+    self.window.rootViewController = tbv;
     [self.window makeKeyAndVisible];
     
     if ([UIDevice currentDevice].systemVersion.floatValue >= 7.0) {
