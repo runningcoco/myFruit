@@ -14,5 +14,6 @@
 #define kScreenWidth self.view.frame.size.width
 #define kScreenHeigth self.view.frame.size.height
 
+#define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 
 #endif
