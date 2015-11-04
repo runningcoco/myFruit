@@ -10,6 +10,9 @@
 #import "MyInformationViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "NavigationController.h"
+#import "BalanceViewController.h"
+#import "CouponViewController.h"
+#import "ScoreViewController.h"
 
 #define kImgViewHeight imgView.frame.size.height
 
