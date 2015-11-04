@@ -98,14 +98,14 @@
     cardBtn.backgroundColor = [UIColor whiteColor];
     [cardBtn setTitle:@"0 个优惠券" forState:UIControlStateNormal];
     [cardBtn setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
-    [cardBtn addTarget:self action:@selector(accountClick) forControlEvents:UIControlEventTouchUpInside];
+    [cardBtn addTarget:self action:@selector(couponClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:cardBtn];
     
     scoreBtn = [[UIButton alloc] initWithFrame:CGRectMake(kScreenWidth - accountBtn.frame.size.width, kImgViewHeight, (kScreenWidth - 2)/3, 65)];
     scoreBtn.backgroundColor = [UIColor whiteColor];
     [scoreBtn setTitle:@"0 分" forState:UIControlStateNormal];
     [scoreBtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
-    [scoreBtn addTarget:self action:@selector(accountClick) forControlEvents:UIControlEventTouchUpInside];
+    [scoreBtn addTarget:self action:@selector(scoreClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:scoreBtn];
     
     customActionTV = [[UITableView alloc] initWithFrame:CGRectMake(0, kImgViewHeight + 65, kScreenWidth, kScreenHeigth - kImgViewHeight - 80)];
@@ -125,7 +125,30 @@
 - (void)accountClick
 {
     NSLog(@"点了一下");
+    BalanceViewController *balanceAccount = [[BalanceViewController alloc] init];
+    NavigationController *nav = [[NavigationController alloc] initWithRootViewController:balanceAccount];
+    balanceAccount.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:nav animated:YES completion:nil];
 }
+
+- (void)couponClick
+{
+    NSLog(@"点了一下");
+    CouponViewController *couponVC = [[CouponViewController alloc] init];
+    NavigationController *nav = [[NavigationController alloc] initWithRootViewController:couponVC];
+    couponVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:nav animated:YES completion:nil];
+}
+
+- (void)scoreClick
+{
+    NSLog(@"点了一下");
+    ScoreViewController *scoreVC = [[ScoreViewController alloc] init];
+    NavigationController *nav = [[NavigationController alloc] initWithRootViewController:scoreVC];
+    scoreVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentViewController:nav animated:YES completion:nil];
+}
+
 
 - (void)myInformationClick
 {

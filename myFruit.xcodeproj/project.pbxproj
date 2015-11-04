@@ -12,6 +12,9 @@
 		56B1408C1BDFB4830026C60D /* Tarbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B1408B1BDFB4830026C60D /* Tarbar.m */; };
 		56B1408F1BDFBCA80026C60D /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B1408E1BDFBCA80026C60D /* PersonalViewController.m */; };
 		56B140921BDFC5B20026C60D /* MyInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B140911BDFC5B20026C60D /* MyInformationViewController.m */; };
+		56B140951BE8FAF90026C60D /* BalanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B140941BE8FAF90026C60D /* BalanceViewController.m */; };
+		56B140981BE8FF9B0026C60D /* CouponViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B140971BE8FF9B0026C60D /* CouponViewController.m */; };
+		56B1409B1BE900A90026C60D /* ScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B1409A1BE900A90026C60D /* ScoreViewController.m */; };
 		56C30EA41BDE7457006919AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EA31BDE7457006919AF /* main.m */; };
 		56C30EA71BDE7457006919AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EA61BDE7457006919AF /* AppDelegate.m */; };
 		56C30EAA1BDE7457006919AF /* ShoppingcartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56C30EA91BDE7457006919AF /* ShoppingcartViewController.m */; };
@@ -47,6 +50,12 @@
 		56B1408E1BDFBCA80026C60D /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
 		56B140901BDFC5B20026C60D /* MyInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyInformationViewController.h; sourceTree = "<group>"; };
 		56B140911BDFC5B20026C60D /* MyInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyInformationViewController.m; sourceTree = "<group>"; };
+		56B140931BE8FAF90026C60D /* BalanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalanceViewController.h; sourceTree = "<group>"; };
+		56B140941BE8FAF90026C60D /* BalanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BalanceViewController.m; sourceTree = "<group>"; };
+		56B140961BE8FF9B0026C60D /* CouponViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponViewController.h; sourceTree = "<group>"; };
+		56B140971BE8FF9B0026C60D /* CouponViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponViewController.m; sourceTree = "<group>"; };
+		56B140991BE900A90026C60D /* ScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreViewController.h; sourceTree = "<group>"; };
+		56B1409A1BE900A90026C60D /* ScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreViewController.m; sourceTree = "<group>"; };
 		56C30E9E1BDE7457006919AF /* myFruit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFruit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C30EA21BDE7457006919AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56C30EA31BDE7457006919AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -127,6 +136,12 @@
 				56B1408E1BDFBCA80026C60D /* PersonalViewController.m */,
 				56B140901BDFC5B20026C60D /* MyInformationViewController.h */,
 				56B140911BDFC5B20026C60D /* MyInformationViewController.m */,
+				56B140931BE8FAF90026C60D /* BalanceViewController.h */,
+				56B140941BE8FAF90026C60D /* BalanceViewController.m */,
+				56B140961BE8FF9B0026C60D /* CouponViewController.h */,
+				56B140971BE8FF9B0026C60D /* CouponViewController.m */,
+				56B140991BE900A90026C60D /* ScoreViewController.h */,
+				56B1409A1BE900A90026C60D /* ScoreViewController.m */,
 				56C30ECA1BDE7538006919AF /* HomeViewController.h */,
 				56C30ECB1BDE7538006919AF /* HomeViewController.m */,
 				56C30ED01BDE7574006919AF /* RegistViewController.h */,
@@ -266,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56B1409B1BE900A90026C60D /* ScoreViewController.m in Sources */,
 				56C30EC91BDE7512006919AF /* TabBarViewController.m in Sources */,
+				56B140951BE8FAF90026C60D /* BalanceViewController.m in Sources */,
 				56C30ED21BDE7574006919AF /* RegistViewController.m in Sources */,
 				56C30EAA1BDE7457006919AF /* ShoppingcartViewController.m in Sources */,
 				56C30ECF1BDE7551006919AF /* MarketViewController.m in Sources */,
@@ -277,6 +294,7 @@
 				56C30ECC1BDE7538006919AF /* HomeViewController.m in Sources */,
 				56C30EA41BDE7457006919AF /* main.m in Sources */,
 				56B1408F1BDFBCA80026C60D /* PersonalViewController.m in Sources */,
+				56B140981BE8FF9B0026C60D /* CouponViewController.m in Sources */,
 				56B140921BDFC5B20026C60D /* MyInformationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
