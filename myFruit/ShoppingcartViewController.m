@@ -9,6 +9,9 @@
 #import "ShoppingcartViewController.h"
 
 @interface ShoppingcartViewController ()
+{
+    
+}
 
 @end
 

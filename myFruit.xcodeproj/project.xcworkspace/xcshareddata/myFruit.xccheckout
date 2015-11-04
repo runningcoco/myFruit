@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D185F4CE-0838-493B-A4B6-1BD21D5C5F24</string>
 	<key>IDESourceControlProjectName</key>
-	<string>myFruit</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>CE9A2632E76F9D8236F54F2855A447FE8A1C6784</key>
 		<string>https://github.com/runningcoco/myFruit.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>myFruit.xcodeproj</string>
+	<string>myFruit.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CE9A2632E76F9D8236F54F2855A447FE8A1C6784</key>

@@ -8,9 +8,11 @@
 
 #import "MarketViewController.h"
 
-@interface MarketViewController () <UISearchBarDelegate>
+@interface MarketViewController () <UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource>
 {
     UISearchBar *customSearchBar;
+    UITableView *leftTV;
+    UITableView *rightTV;
     
 }
 
@@ -54,6 +56,20 @@
     customSearchBar.showsCancelButton = NO;
     [self.navigationItem.titleView sizeToFit];
     [searchView addSubview:customSearchBar];
+    
+    leftTV = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth/5, kScreenHeigth)];
+    UIView *headerview = [[UIView alloc]initWithFrame:CGRectZero];
+    headerview.backgroundColor = [UIColor colorWithWhite:0.92 alpha:1.0f];
+    leftTV.tableHeaderView = headerview;
+    UIView *v = [[UIView alloc] init];
+    leftTV.tableFooterView = v;
+    leftTV.delegate = self;
+    leftTV.dataSource = self;
+    leftTV.scrollEnabled = NO;
+    [self.view addSubview:leftTV];
+    
+    rightTV = [[UITableView alloc] initWithFrame:CGRectMake(kScreenWidth/5, 0, kScreenWidth *0.8, kScreenHeigth)];
+    
 }
 
 -(void)backClick
@@ -70,6 +86,44 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [customSearchBar resignFirstResponder];
+}
+
+
+#pragma mark - tableView delegate
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 8;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+        return 1;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    if (section == 7) {
+        return 150;
+    } else
+        return 0;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"生成的单元格(组：%li , 行%ld)",(long)indexPath.section, (long)indexPath.row);
+    
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
