@@ -122,8 +122,37 @@
 {
     NSLog(@"生成的单元格(组：%li , 行%ld)",(long)indexPath.section, (long)indexPath.row);
     
-    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:nil];
+    static NSString *cellIdentifier = @"cellIdentifier";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+        
+        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth/5, 60)];
+        btn.tag = 1000 + indexPath.section;
+        NSString *btnTitle = [NSString stringWithFormat:@"%ld 号",btn.tag - 999];
+            
+        [btn setTitle:btnTitle forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
+        btn.backgroundColor = [UIColor orangeColor];
+        
+        if (btn.tag == 1000) {
+            [btn setTitle:@"限时秒杀" forState:UIControlStateNormal];
+            btn.titleLabel.font = [UIFont systemFontOfSize:14.0f weight:1.0f];
+        }
+        
+        [cell addSubview:btn];
+        
+    }
+    
     return cell;
+}
+
+- (void)click
+{
+    NSLog(@"点了一号按钮");
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
