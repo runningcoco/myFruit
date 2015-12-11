@@ -13,6 +13,7 @@
     UISearchBar *customSearchBar;
     UITableView *leftTV;
     UITableView *rightTV;
+    NSArray *arrayName;
     
 }
 
@@ -57,7 +58,7 @@
     [self.navigationItem.titleView sizeToFit];
     [searchView addSubview:customSearchBar];
     
-    leftTV = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth/5, kScreenHeigth)];
+    leftTV = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth/4, kScreenHeigth)];
     UIView *headerview = [[UIView alloc]initWithFrame:CGRectZero];
     headerview.backgroundColor = [UIColor colorWithWhite:0.92 alpha:1.0f];
     leftTV.tableHeaderView = headerview;
@@ -67,6 +68,8 @@
     leftTV.dataSource = self;
     leftTV.scrollEnabled = NO;
     [self.view addSubview:leftTV];
+    
+    arrayName = [NSArray arrayWithObjects:@"限时优惠", @"一米团",@"每日推荐",@"Bigger套餐",@"缤纷鲜果",@"奶鲜饮品",@"乐享零食",nil];
     
     rightTV = [[UITableView alloc] initWithFrame:CGRectMake(kScreenWidth/5, 0, kScreenWidth *0.8, kScreenHeigth)];
     
@@ -92,12 +95,12 @@
 #pragma mark - tableView delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 8;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [arrayName count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -107,7 +110,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-        return 1;
+    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
@@ -128,31 +131,19 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
         
-        UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth/5, 60)];
-        btn.tag = 1000 + indexPath.section;
-        NSString *btnTitle = [NSString stringWithFormat:@"%ld 号",btn.tag - 999];
-            
-        [btn setTitle:btnTitle forState:UIControlStateNormal];
-        [btn addTarget:self action:@selector(click) forControlEvents:UIControlEventTouchUpInside];
-        btn.backgroundColor = [UIColor orangeColor];
-        
-        if (btn.tag == 1000) {
-            [btn setTitle:@"限时秒杀" forState:UIControlStateNormal];
-            btn.titleLabel.font = [UIFont systemFontOfSize:14.0f weight:1.0f];
-        }
-        
-        [cell addSubview:btn];
-        
     }
     
+    cell.textLabel.textColor = [UIColor lightGrayColor];
+    [cell.textLabel setText:[arrayName objectAtIndex:indexPath.row]];
+    cell.textLabel.textAlignment = NSTextAlignmentCenter;
+    cell.textLabel.font = [UIFont systemFontOfSize:12.5f];
+    
+    UIView *v = [[UIView alloc] init];
+    v.backgroundColor = [UIColor orangeColor];
+    cell.selectedBackgroundView = v;
+    cell.textLabel.highlightedTextColor = [UIColor whiteColor];
+    
     return cell;
-}
-
-- (void)click
-{
-    NSLog(@"点了一号按钮");
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
